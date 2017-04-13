@@ -2,17 +2,17 @@
     "docs": [
         {
             "location": "/index.html", 
-            "text": "User Guide - BigCommerce Theme LaParis\n\n\nTheme Version: 1.0.0 (2017-04-05)\n\n\nTheme designed and developed by \npapathemes\n \n\n\nUser Guide Contents\n\n\n\n\nInstall the theme\n\n\nQuick Start Guide\n\n\nCustomization\n\n\nTheme Settings\n\n\nHelp \n Support", 
+            "text": "User Guide - BigCommerce Theme LaParis\n\n\nTheme Version: 1.0.1 (2017-04-13)\n\n\nTheme designed and developed by \npapathemes\n \n\n\nUser Guide Contents\n\n\n\n\nInstall the theme\n\n\nQuick Start Guide\n\n\nCustomization\n\n\nTheme Settings\n\n\nFAQs\n\n\nHelp \n Support", 
             "title": "Home"
         }, 
         {
             "location": "/index.html#user-guide-bigcommerce-theme-laparis", 
-            "text": "Theme Version: 1.0.0 (2017-04-05)  Theme designed and developed by  papathemes", 
+            "text": "Theme Version: 1.0.1 (2017-04-13)  Theme designed and developed by  papathemes", 
             "title": "User Guide - BigCommerce Theme LaParis"
         }, 
         {
             "location": "/index.html#user-guide-contents", 
-            "text": "Install the theme  Quick Start Guide  Customization  Theme Settings  Help   Support", 
+            "text": "Install the theme  Quick Start Guide  Customization  Theme Settings  FAQs  Help   Support", 
             "title": "User Guide Contents"
         }, 
         {
@@ -354,6 +354,26 @@
             "location": "/settings/index.html#homepage", 
             "text": "This section let you configure the homepage:   Show/hide any content blocks and product blocks.  Rearrange position of any blocks.  Configure display type of New, Featured, Popular Products blog.  Number of products to show on each block.", 
             "title": "Homepage"
+        }, 
+        {
+            "location": "/faqs/index.html", 
+            "text": "FAQs\n\n\nHow to make slideshow stretched full width?\n\n\n \n\n\nOpen \nTheme Editor\n \n \nCarousel\n section \n check to the option \nAllows image to stretch on large screens\n:\n\n\n\n\nHow to remove the leaves background image on the first banner of 'Default' style?\n\n\n\n\nTo remove this leaves image, open \nEdit Theme Files\n, open file \nassets/scss/_theme-custom.scss_\n. Add the code below to the end of file:\n\n\n.emthemesModez-banner--laparis1:first-child .emthemesModez-banner-figcaption {\n  background-image: none;\n}\n\n\n\n\nSave and refresh your homepage to see changes.", 
+            "title": "FAQs"
+        }, 
+        {
+            "location": "/faqs/index.html#faqs", 
+            "text": "", 
+            "title": "FAQs"
+        }, 
+        {
+            "location": "/faqs/index.html#how-to-make-slideshow-stretched-full-width", 
+            "text": "Open  Theme Editor     Carousel  section   check to the option  Allows image to stretch on large screens :", 
+            "title": "How to make slideshow stretched full width?"
+        }, 
+        {
+            "location": "/faqs/index.html#how-to-remove-the-leaves-background-image-on-the-first-banner-of-default-style", 
+            "text": "To remove this leaves image, open  Edit Theme Files , open file  assets/scss/_theme-custom.scss_ . Add the code below to the end of file:  .emthemesModez-banner--laparis1:first-child .emthemesModez-banner-figcaption {\n  background-image: none;\n}  Save and refresh your homepage to see changes.", 
+            "title": "How to remove the leaves background image on the first banner of 'Default' style?"
         }, 
         {
             "location": "/support/index.html", 
