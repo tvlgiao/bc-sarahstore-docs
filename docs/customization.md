@@ -487,3 +487,13 @@ Example of a mixed __default.html__:
 {{> components/emthemes-modez/sections/section section="brands_carousel"}}
 ```
 
+## Add our own CSS (Sass) code
+
+To add your own custom CSS code you can edit the file `assets/scss/_theme-custom.scss_` in __Edit Theme Files__ editor:
+
+![Edit file _theme-custom.scss](img/edit-file-theme-custom-css.png)
+
+__Note: __
+
+- Copy / backup this file for future theme upgrade.
+- Add custom CSS code required CSS (or Sass) programming skill. It's not recommended for new users.
