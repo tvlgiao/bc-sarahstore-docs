@@ -240,9 +240,9 @@
 <p><strong>Grid</strong>:</p>
 <p><img alt="Products Grid" src="../img/home1-products-grid.jpg" /></p>
 <p><strong>List</strong>:</p>
-<p><img alt="Products Grid" src="../img/home1-products-list.jpg" /></p>
+<p><img alt="Products List" src="../img/home1-products-list.jpg" /></p>
 <p><strong>Carousel</strong>:</p>
-<p><img alt="Products Grid" src="../img/home1-products-carousel.jpg" /></p>
+<p><img alt="Products Carousel" src="../img/home1-products-carousel.jpg" /></p>
 <h3 id="configure-a-layout-type-of-products-block-number-of-products-to-show-up">Configure a Layout Type of products block &amp; Number of Products to show up<a class="headerlink" href="#configure-a-layout-type-of-products-block-number-of-products-to-show-up" title="Permanent link">&para;</a></h3>
 <p>In the <strong>Theme Editor</strong> &gt; <strong>Homepage</strong>, look into <strong>New Products</strong> section (or <strong>Featured Products</strong>, <strong>Most Popular Products</strong>):</p>
 <ul>
@@ -262,6 +262,17 @@
 <h3 id="change-the-heading-text">Change the heading text<a class="headerlink" href="#change-the-heading-text" title="Permanent link">&para;</a></h3>
 <p>To change the heading text (New Products, Featured Products, Most Popular Products), edit the language file, look for the key <code>products</code> &gt; <code>new</code> or <code>featured</code> or <code>top</code>.</p>
 <p><img alt="Edit language new products heading text" src="../img/edit-language-products-new.png" /></p>
+<h3 id="change-background-of-featured-products-block">Change background of featured products block<a class="headerlink" href="#change-background-of-featured-products-block" title="Permanent link">&para;</a></h3>
+<p><img alt="Products Carousel" src="../img/home1-products-carousel.jpg" /></p>
+<h4 id="method-1">Method 1:<a class="headerlink" href="#method-1" title="Permanent link">&para;</a></h4>
+<p>To replace this background with our own image, in <a href="../quickstart/index.html#edit-template-files">Edit Theme Files</a> you can overwrite image file <code>assets/img/categories-featured-bg.jpg</code> with your own.</p>
+<h4 id="method-2">Method 2:<a class="headerlink" href="#method-2" title="Permanent link">&para;</a></h4>
+<p>To completely remove it, add the CSS code below to <code>assets/scss/_theme-custom.scss</code>:</p>
+<pre><code class="css">.emthemesModez-productsVerticalCategoriesAside-outer--1 {
+  background-image: none;
+}
+</code></pre>
+
 <h2 id="recent-blog-posts">Recent Blog Posts<a class="headerlink" href="#recent-blog-posts" title="Permanent link">&para;</a></h2>
 <p><img alt="Recent blog posts" src="../img/home1-blog.jpg" /></p>
 <p>This block show the most recent blog posts.</p>
