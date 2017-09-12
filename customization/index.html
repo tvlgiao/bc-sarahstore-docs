@@ -8,7 +8,7 @@
   
   
   
-  <title>Customization - BigCommerce Theme LaParis - User Guide</title>
+  <title>Customization - BigCommerce Theme SarahStore - User Guide</title>
   
 
   <link rel="shortcut icon" href="../img/favicon.ico">
@@ -46,7 +46,7 @@
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
-        <a href="../index.html" class="icon icon-home"> BigCommerce Theme LaParis - User Guide</a>
+        <a href="../index.html" class="icon icon-home"> BigCommerce Theme SarahStore - User Guide</a>
         <div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -92,33 +92,25 @@
                 
                     <li><a class="toctree-l4" href="#main-slideshow-carousel">Main Slideshow / Carousel</a></li>
                 
-                    <li><a class="toctree-l4" href="#3-banners">3 Banners</a></li>
+                    <li><a class="toctree-l4" href="#text-below-the-main-slideshow">Text below the main slideshow</a></li>
+                
+                    <li><a class="toctree-l4" href="#2-banners-beside-the-main-slideshow-sarastore-ii">2 Banners beside the main slideshow (SaraStore II)</a></li>
+                
+                    <li><a class="toctree-l4" href="#shop-by-block">Shop By block</a></li>
                 
                     <li><a class="toctree-l4" href="#new-featured-popular-products">New / Featured / Popular Products</a></li>
                 
                     <li><a class="toctree-l4" href="#recent-blog-posts">Recent Blog Posts</a></li>
                 
-                    <li><a class="toctree-l4" href="#image-carousel">Image Carousel</a></li>
+                    <li><a class="toctree-l4" href="#connect-with-us-block">Connect With Us block</a></li>
                 
-                    <li><a class="toctree-l4" href="#instagram-photos">Instagram Photos</a></li>
+                    <li><a class="toctree-l4" href="#image-carousel-sarahstore-ii">Image Carousel (SarahStore II)</a></li>
                 
-                    <li><a class="toctree-l4" href="#laparis-ii-products-by-category">LaParis II - Products By Category</a></li>
+                    <li><a class="toctree-l4" href="#footer-store-info">Footer - Store Info</a></li>
                 
-                    <li><a class="toctree-l4" href="#laparis-ii-images-carousel">LaParis II - Images Carousel</a></li>
+                    <li><a class="toctree-l4" href="#footer-2-column-links">Footer - 2 Column Links</a></li>
                 
-                    <li><a class="toctree-l4" href="#laparis-ii-new-featured-bestselling-columns">LaParis II - New / Featured / Bestselling Columns</a></li>
-                
-                    <li><a class="toctree-l4" href="#footer-newsletter">Footer - Newsletter</a></li>
-                
-                    <li><a class="toctree-l4" href="#footer-links">Footer - Links</a></li>
-                
-                    <li><a class="toctree-l4" href="#social-media-icons">Social Media Icons</a></li>
-                
-                    <li><a class="toctree-l4" href="#payment-icons">Payment Icons</a></li>
-                
-                    <li><a class="toctree-l4" href="#copyright-links">Copyright Links</a></li>
-                
-                    <li><a class="toctree-l4" href="#credit-links">Credit Links</a></li>
+                    <li><a class="toctree-l4" href="#footer-copyright-links">Footer - Copyright links</a></li>
                 
                     <li><a class="toctree-l4" href="#mix-contents-from-other-theme-styles">Mix contents from other theme styles</a></li>
                 
@@ -161,7 +153,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="../index.html">BigCommerce Theme LaParis - User Guide</a>
+        <a href="../index.html">BigCommerce Theme SarahStore - User Guide</a>
       </nav>
 
       
@@ -205,7 +197,7 @@
 <p><img alt="Header Logo at center" src="../img/home1-header-center.png" /></p>
 <p>To configure, open the <strong>Theme Editor</strong>, scroll down to section <strong>Logo</strong>, click to expand the logo options. Choose a certain option of <strong>Logo position</strong>, then click <strong>Refresh</strong> button appear after.</p>
 <p><img alt="Change logo position" src="../img/change-logo-position.png" /></p>
-<h3 id="edit-3-info-text-blocks">Edit 3 info text blocks<a class="headerlink" href="#edit-3-info-text-blocks" title="Permanent link">&para;</a></h3>
+<h3 id="edit-welcome-text-top-links">Edit welcome text &amp; top links<a class="headerlink" href="#edit-welcome-text-top-links" title="Permanent link">&para;</a></h3>
 <p><img alt="Header info text" src="../img/home1-infobar.png" /></p>
 <p>Show or hide these text blocks in Theme Editor &gt; <strong>Header</strong> section as showing below: 
 <img alt="Theme editor top info bar" src="../img/theme-editor-top-info-bar.png" /></p>
@@ -213,7 +205,11 @@
 <p><img alt="Edit theme files" src="../img/edit-theme-files.png" /></p>
 <p>From the left navigation, click to edit the language file (e.i <code>en.json</code>):</p>
 <p><img alt="Edit language file" src="../img/edit-language-top-info-text.png" /></p>
-<p>Edit the text as figured above.</p>
+<ul>
+<li><code>welcome_text</code>: the welcome text</li>
+<li><code>help_text</code> &amp; <code>help_link</code>: text &amp; url of Help link.</li>
+<li><code>contact_text</code> &amp; <code>contact_link</code>: text &amp; url of Contact link.</li>
+</ul>
 <h3 id="colors-customization_1">Colors Customization<a class="headerlink" href="#colors-customization_1" title="Permanent link">&para;</a></h3>
 <p>To customize colors of the header section, look into the options showing below in the Theme Editor:</p>
 <p><img alt="Theme editor header" src="../img/theme-editor-header.png" /></p>
@@ -230,11 +226,16 @@
 <p><img alt="Theme editor carousel" src="../img/theme-editor-carousel.png" /></p>
 <h3 id="hide-the-slideshow">Hide the slideshow<a class="headerlink" href="#hide-the-slideshow" title="Permanent link">&para;</a></h3>
 <p>To hide the slideshow on homepage, uncheck on the checkbox <strong>Show Carousel</strong> in section <strong>Carousel</strong> of the Theme Editor.</p>
-<h2 id="3-banners">3 Banners<a class="headerlink" href="#3-banners" title="Permanent link">&para;</a></h2>
-<p><img alt="3 Banners LaParis Style 1" src="../img/home1-banner-laparis1.jpg" /></p>
-<p>To edit content and images of 3 banners, edit the language file <code>en.json</code> as showing below:</p>
-<p><img alt="Edit language banner LaParis1" src="../img/edit-language-banner-laparis1.png" /></p>
-<p>If you don't want to show any elements of a banner, for example the button, leave the value <strong>a single space</strong> character. Example: <code>"button": " "</code>.</p>
+<h2 id="text-below-the-main-slideshow">Text below the main slideshow<a class="headerlink" href="#text-below-the-main-slideshow" title="Permanent link">&para;</a></h2>
+<p><img alt="Text below the main slideshow" src="../img/home1-text-below-slideshow.png" /></p>
+<p>Edit this content in the language file <code>lang/en.json</code>, find the key <code>emthemesmodez</code> &gt; <code>text_block_1</code> and edit its value.</p>
+<h2 id="2-banners-beside-the-main-slideshow-sarastore-ii">2 Banners beside the main slideshow (SaraStore II)<a class="headerlink" href="#2-banners-beside-the-main-slideshow-sarastore-ii" title="Permanent link">&para;</a></h2>
+<p><img alt="2 banners beside the main slideshow" src="../img/home2-slideshow-banners.jpg" /></p>
+<p>You can edit these banners and links in the language file <code>lang/en.json</code>, find key <code>emthemesmodez</code> &gt; <code>slideshow</code>, update <code>sarahstore2_banner_1</code> and <code>sarahstore2_banner_2</code> with your own content.</p>
+<h2 id="shop-by-block">Shop By block<a class="headerlink" href="#shop-by-block" title="Permanent link">&para;</a></h2>
+<p><img alt="Shop by block" src="../img/home1-shopby.png" /></p>
+<p>Edit this block content in the language file <code>lang/en.json</code>, find the key <code>emthemesmodez</code> &gt; <code>shop_by</code> edit as you wish:</p>
+<p><img alt="Edit langauge for shop by block" src="../img/edit-language-shopby.png" /></p>
 <h2 id="new-featured-popular-products">New / Featured / Popular Products<a class="headerlink" href="#new-featured-popular-products" title="Permanent link">&para;</a></h2>
 <p>The theme supports 3 layout type of New Products, Featured Products and Popular Products blocks:</p>
 <p><strong>Grid</strong>:</p>
@@ -279,7 +280,11 @@
 <h3 id="customize-heading-text-and-other-text">Customize heading text and other text<a class="headerlink" href="#customize-heading-text-and-other-text" title="Permanent link">&para;</a></h3>
 <p>To change the heading text, read more text and date format, edit the language file. Find the key <code>blog</code> &gt; <code>recent_posts</code>, <code>posted_by</code> and <code>read_more</code>, edit its values as you want.</p>
 <p><img alt="Edit recent blog text in the language file" src="../img/edit-language-blog.png" /></p>
-<h2 id="image-carousel">Image Carousel<a class="headerlink" href="#image-carousel" title="Permanent link">&para;</a></h2>
+<h2 id="connect-with-us-block">Connect With Us block<a class="headerlink" href="#connect-with-us-block" title="Permanent link">&para;</a></h2>
+<p><img alt="Connect with us" src="../img/home1-connect-with-us.png" /></p>
+<p>Edit the heading text in the language file <code>lang/en.json</code>, find the key <code>social</code> &gt; <code>connect</code></p>
+<p>Note: You will need to configure which icons to appear in admin panel &gt; <strong>Storefront Design</strong> &gt; <strong>Design Options</strong>, input your social links in <strong>Social Media</strong> section.</p>
+<h2 id="image-carousel-sarahstore-ii">Image Carousel (SarahStore II)<a class="headerlink" href="#image-carousel-sarahstore-ii" title="Permanent link">&para;</a></h2>
 <p><img alt="Image carousel" src="../img/home1-image-carousel.png" /></p>
 <p>To edit image and links in this image carousel section, edit the language file, find key <code>emthemesmodez</code> &gt; <code>image_carousel</code></p>
 <p><img alt="Edit language image carousel" src="../img/edit-language-brands-carousel.png" /></p>
@@ -288,125 +293,22 @@
 <li><code>title*</code>: is image text description.</li>
 <li><code>url*</code>: is image link. Leave a single space letter in the value if you want to hide any image.</li>
 </ul>
-<h2 id="instagram-photos">Instagram Photos<a class="headerlink" href="#instagram-photos" title="Permanent link">&para;</a></h2>
-<p><img alt="Instagram Photos block" src="../img/home1-instagram.jpg" /></p>
-<h3 id="get-your-own-user-id-client-id-access-token">Get your own User ID, Client ID, Access Token<a class="headerlink" href="#get-your-own-user-id-client-id-access-token" title="Permanent link">&para;</a></h3>
-<p>In order to display your Instagram photos on your website, you will need to get the <strong>User ID</strong>, <strong>Client ID</strong> and <strong>Access Token</strong> from <strong>Instagram Developer</strong> portal.</p>
-<h4 id="1-create-your-own-client-id">1. Create your own Client ID<a class="headerlink" href="#1-create-your-own-client-id" title="Permanent link">&para;</a></h4>
-<p>Open the URL <a href="https://www.instagram.com/developer/">https://www.instagram.com/developer/</a> in your browser.</p>
-<p>Login to your Instagram account.</p>
-<p>Click button <strong>Register Your Application</strong>: </p>
-<p><img alt="Instagram register your application" src="../img/instagram-register.png" /></p>
-<p>Click button <strong>Register a New Client</strong>: </p>
-<p><img alt="Instagram new client" src="../img/instagram-register-new-client.png" /></p>
-<p>Enter all required info on the form. </p>
-<p><img alt="Instagram registration form" src="../img/instagram-registration-form.png" /></p>
-<p>Note that <strong>Valid redirect URIs</strong> should be exactly <code>http://127.0.0.1</code> as recommended as it will be used in the next step.</p>
-<p>After submitting the form you will get back to the previous page with a new <strong>Client ID</strong> is created.</p>
-<p><img alt="Instagram Manage Clients" src="../img/instagram-manage-clients.png" /></p>
-<p>Save this <strong>Client ID</strong> value, it will be used to configure the Instagram Photos block.</p>
-<h4 id="2-retrieve-your-access-token">2. Retrieve your Access Token<a class="headerlink" href="#2-retrieve-your-access-token" title="Permanent link">&para;</a></h4>
-<p>Click button <strong>Manage</strong> on your the client app created previously. Open <strong>Security</strong> tab, uncheck <strong>Disable Implicit OAuth</strong> checkbox:</p>
-<p><img alt="Manage client - security tab" src="../img/instagram-implicit-oauth.png" /></p>
-<p>Click <strong>Update Client</strong> button to complete.</p>
-<p>Now open your web browser with the URL: </p>
-<pre><code class="plain">https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&amp;redirect_uri=http://127.0.0.1&amp;response_type=token
-</code></pre>
-
-<p>where <code>CLIENT-ID</code> is replaced by your <strong>Client ID</strong> number created previously.</p>
-<p>Click <strong>Authorize</strong> button to grant access permission:</p>
-<p><img alt="Authorize client app" src="../img/instagram-authorize.png" /></p>
-<p>Instagram will redirect you to an error page with the URL similiar: </p>
-<p><img alt="URL contains access token" src="../img/instagram-get-code.png" /></p>
-<p>The text after <code>access_token=</code> is the <strong>Access Token</strong> you want to get. Save it for the next step.</p>
-<h4 id="3-retrieve-your-user-id">3. Retrieve your User ID<a class="headerlink" href="#3-retrieve-your-user-id" title="Permanent link">&para;</a></h4>
-<p>Open the link below on your web browser:</p>
-<pre><code class="plain">https://api.instagram.com/v1/users/self/?access_token=ACCESS-TOKEN
-</code></pre>
-
-<p>Where <code>ACCESS-TOKEN</code> is replaced by your real <strong>Access Token</strong> just received previously.</p>
-<p><img alt="User ID code" src="../img/instagram-get-userid.png" /></p>
-<p>The number in <code>"id": "..."</code> is your <strong>User ID</strong>.</p>
-<h3 id="display-your-instagram-photos">Display your Instagram photos<a class="headerlink" href="#display-your-instagram-photos" title="Permanent link">&para;</a></h3>
-<p>To display our own Instagram photos, edit the language file. Find the key <code>emthemesmodez</code> &gt; <code>instagram</code>, input your real code:</p>
+<h2 id="footer-store-info">Footer - Store Info<a class="headerlink" href="#footer-store-info" title="Permanent link">&para;</a></h2>
+<p><img alt="Footer Store Info" src="../img/home1-footer-store-info.png" /></p>
+<p>You can edit content in the language file <code>lang/en.json</code>:</p>
 <ul>
-<li><code>user_id</code>: Is your Instagram <strong>User ID</strong>.</li>
-<li><code>client_id</code>: is your Instagram <strong>Client ID</strong>.</li>
-<li><code>access_token</code>: is your Instagram <strong>Access Token</strong>.</li>
-<li><code>title</code>: Is the heading text.</li>
+<li><code>footer</code> &gt; <code>about_text</code>: Your custom about us text</li>
+<li><code>footer</code> &gt; <code>call_us</code>: phone number text</li>
+<li><code>footer</code> &gt; <code>email</code>: email to display</li>
+<li>Phone and address are pull out from your store settings.</li>
 </ul>
-<p><img alt="Edit instagram in the language file" src="../img/edit-language-instagram.png" /></p>
-<h2 id="laparis-ii-products-by-category">LaParis II - Products By Category<a class="headerlink" href="#laparis-ii-products-by-category" title="Permanent link">&para;</a></h2>
-<p><img alt="Products by category" src="../img/home2-products-by-category.jpg" /></p>
-<p>This section allows you to show products in a certain category. To configure it edit the language file. File keys <code>emthemesmodez</code> &gt; <code>products_by_category</code>.</p>
-<p><img alt="Edit language products by category" src="../img/edit-language-products-by-category.png" /></p>
-<ul>
-<li><code>category_id_*</code>: is the product category ID that products belong.</li>
-<li><code>image_*</code>: is the image URL to show up beside the products.</li>
-<li><code>heading_*</code>: The heading text on the banner beside.</li>
-<li><code>text_*</code>: Description text on the banner beside.</li>
-<li><code>banner_*</code>: Button text on the banner beside</li>
-<li><code>style_*</code>: <code>" "</code> or <code>"right"</code> to show banner on left or right.</li>
-</ul>
-<p>Theme supports up to 3 products by category blocks.</p>
-<h2 id="laparis-ii-images-carousel">LaParis II - Images Carousel<a class="headerlink" href="#laparis-ii-images-carousel" title="Permanent link">&para;</a></h2>
-<p><img alt="Images Carousel" src="../img/home2-image-carousel.jpg" /></p>
-<p>To configure this image carousel, edit the lagnuage file, find keys <code>emthemesmodez</code> &gt; <code>image_carousel</code>:</p>
-<p><img alt="Edit language image carousel" src="../img/edit-language-image-carousel.png" /></p>
-<ul>
-<li><code>image_*</code>: Slide image URL. Leave a single space letter if not use.</li>
-<li><code>image_alt_*</code>: image alt text.</li>
-<li><code>url_*</code>: link URL.</li>
-<li><code>heading_*</code>: Heading text. Leave a single space letter to hide.</li>
-<li><code>text_*</code>: Description text. Leave a single space letter to hide.</li>
-<li><code>button_*</code>: Button text. Leave a single space to hide.</li>
-</ul>
-<p>Theme supports up to 5 images in this section. </p>
-<h2 id="laparis-ii-new-featured-bestselling-columns">LaParis II - New / Featured / Bestselling Columns<a class="headerlink" href="#laparis-ii-new-featured-bestselling-columns" title="Permanent link">&para;</a></h2>
-<p><img alt="New Featured Bestselling products columns" src="../img/home2-special-products-columns.jpg" /></p>
-<p>This section show new products, featured products and bestselling products in 3 columns.</p>
-<p>You can configure number of products to display in <strong>Theme Editor</strong> &gt; <strong>Homepage</strong> section:</p>
-<p><img alt="Theme editor products" src="../img/theme-editor-homepage-products-options.png" /></p>
-<p>You can change the heading text of each column in the language files, find and edit keys <code>products</code> &gt; <code>new</code>, <code>products</code> &gt; <code>featured</code>, <code>products</code> &gt; <code>top</code>.</p>
-<h2 id="footer-newsletter">Footer - Newsletter<a class="headerlink" href="#footer-newsletter" title="Permanent link">&para;</a></h2>
-<p><img alt="Newsletter" src="../img/home1-newsletter.png" /></p>
-<h3 id="change-text">Change text<a class="headerlink" href="#change-text" title="Permanent link">&para;</a></h3>
-<p>To change text appear on this section you can edit the language file as instruction below:</p>
-<p>From admin page &gt; <strong>Storefront Design</strong> &gt; <strong>My Themes</strong>, click button <strong>Advanced</strong> &gt; <strong>Edit Theme Files</strong> of the current theme:</p>
-<p><img alt="Edit theme files" src="../img/edit-theme-files.png" /></p>
-<p>From the left navigation, click to edit the language file (e.i <code>en.json</code>):</p>
-<p><img alt="Edit language file" src="../img/edit-language-file.png" /></p>
-<p>See the section <code>Newsletter</code> you can edit as you want:</p>
-<p><img alt="Edit language newsletter" src="../img/edit-language-newsletter.png" /></p>
-<h3 id="colors-customization_3">Colors Customization<a class="headerlink" href="#colors-customization_3" title="Permanent link">&para;</a></h3>
-<p>To customize colors of the header section, look into the options showing below in the <strong>Theme Editor</strong> &gt; <strong>Footer</strong>:</p>
-<p><img alt="Theme editor newsletter" src="../img/theme-editor-newsletter.png" /></p>
-<h2 id="footer-links">Footer - Links<a class="headerlink" href="#footer-links" title="Permanent link">&para;</a></h2>
-<p><img alt="Footer Links" src="../img/home1-footer-columns.png" /></p>
-<p>To edit text and links on the footer, edit the language file, section <code>footer</code> &gt; <code>links</code>:</p>
-<p><img alt="Edit language footer links" src="../img/edit-language-footer-links.png" /></p>
-<ul>
-<li><code>col1_heading</code>, <code>col2_heading</code>, <code>col3_heading</code>: is the heading text of each column.</li>
-<li><code>col*_url*</code>, <code>col*_title*</code>: is URL and text of each link.</li>
-</ul>
-<h2 id="social-media-icons">Social Media Icons<a class="headerlink" href="#social-media-icons" title="Permanent link">&para;</a></h2>
-<p><img alt="Theme editor social media icons" src="../img/theme-editor-social-media-icons.png" /></p>
-<p>To show social icons in the footer, open <strong>Theme Editor</strong> &gt; <strong>Social Media Icons</strong> section, set <strong>Bottom Placement</strong> = <code>Right</code>. </p>
-<p>Note: You will need to configure which icons to appear in admin panel &gt; <strong>Storefront Design</strong> &gt; <strong>Design Options</strong>, input your social links in <strong>Social Media</strong> section.</p>
-<h2 id="payment-icons">Payment Icons<a class="headerlink" href="#payment-icons" title="Permanent link">&para;</a></h2>
-<p><img alt="Theme editor payment icons" src="../img/theme-editor-payment-icons.png" /></p>
-<p>To show/hide payment icons, go to Theme <strong>Editor</strong> &gt; <strong>Payment Icons</strong> secitons, check or uncheck any icons you want to show or hide.</p>
-<h2 id="copyright-links">Copyright Links<a class="headerlink" href="#copyright-links" title="Permanent link">&para;</a></h2>
-<p><img alt="Copyright links" src="../img/home1-copyright-links.png" /></p>
-<p>To edit links in the copyright section at footer, edit the language file, find <code>footer</code> &gt; <code>copyright_links</code>:</p>
-<p><img alt="Edit language copyright links" src="../img/edit-language-copyright-links.png" /></p>
-<ul>
-<li><code>url*</code> is link URL. Leave a <strong>single space</strong> letter if you want to hide any link.</li>
-<li><code>title*</code> is link title.</li>
-</ul>
-<h2 id="credit-links">Credit Links<a class="headerlink" href="#credit-links" title="Permanent link">&para;</a></h2>
-<p><img alt="Theme editor credit links" src="../img/theme-editor-credits.png" /></p>
-<p>To show/hide the credit links, go to Theme Editor &gt; <strong>Footer</strong> section, tick or untick the checkboxes as showing above.</p>
+<h2 id="footer-2-column-links">Footer - 2 Column Links<a class="headerlink" href="#footer-2-column-links" title="Permanent link">&para;</a></h2>
+<p><img alt="2 column links" src="../img/home1-2-column-links.png" /></p>
+<p>You can edit these links in the language file <code>lang/en.json</code>, find key <code>footer</code> &gt; <code>links</code>:</p>
+<p><img alt="Edit language for 2 column links" src="../img/edit-language-2-column-links.png" /></p>
+<h2 id="footer-copyright-links">Footer - Copyright links<a class="headerlink" href="#footer-copyright-links" title="Permanent link">&para;</a></h2>
+<p><img alt="Footer copyright links" src="../img/home1-footer-copyright-links.png" /></p>
+<p>You can edit these links in the language file <code>lang/en.json</code>, find key <code>footer</code> &gt; <code>copyright_links</code>.</p>
 <h2 id="mix-contents-from-other-theme-styles">Mix contents from other theme styles<a class="headerlink" href="#mix-contents-from-other-theme-styles" title="Permanent link">&para;</a></h2>
 <p>For example, if you want to use theme <strong>default</strong> style as the main theme, but also want to display other content blocks from <strong>LaParis II</strong> style. You can edit the template files, rearrange, add more content blocks or delete unused content blocks.</p>
 <p>Let open folder <code>templates</code> &gt; <code>components</code> &gt; <code>emthemes-modez</code> &gt; <code>home</code> in the template files editor:</p>
@@ -414,40 +316,39 @@
 <p>There is 2 files in this folder:</p>
 <ul>
 <li><code>default.html</code>: is used for <strong>default</strong> style.</li>
-<li><code>laparis2.html</code>: is used for <strong>LaParis II</strong> style.</li>
+<li><code>sarahstore2.html</code>: is used for <strong>SarahStore II</strong> style.</li>
 </ul>
 <p>Let's take a look at contents of 2 files:</p>
 <p><strong>default.html</strong></p>
-<pre><code class="plain">{{&gt; components/emthemes-modez/sections/section section=&quot;banner_laparis1_1&quot;}}
+<pre><code class="plain">{{&gt; components/emthemes-modez/sections/section section=&quot;text_1&quot;}}
+{{&gt; components/emthemes-modez/sections/section section=&quot;shop_by&quot;}}
 {{&gt; components/emthemes-modez/sections/section section=&quot;new_products&quot;}}
-{{&gt; components/emthemes-modez/sections/section section=&quot;categories_featured&quot;}}
+{{&gt; components/emthemes-modez/sections/section section=&quot;featured_products&quot;}}
 {{&gt; components/emthemes-modez/sections/section section=&quot;popular_products&quot;}}
 {{&gt; components/emthemes-modez/sections/section section=&quot;blog_recent&quot;}}
-{{&gt; components/emthemes-modez/sections/section section=&quot;brands_carousel&quot;}}
-{{&gt; components/emthemes-modez/sections/section section=&quot;instagram_grid&quot;}}
+{{&gt; components/emthemes-modez/sections/section section=&quot;social_icons&quot;}}
 </code></pre>
 
-<p><strong>laparis2.html</strong></p>
-<pre><code class="plain">{{&gt; components/emthemes-modez/sections/section section=&quot;products_by_category_1&quot;}}
-{{&gt; components/emthemes-modez/sections/section section=&quot;products_by_category_2&quot;}}
-{{&gt; components/emthemes-modez/sections/section section=&quot;carousel_laparis2_1&quot;}}
-{{&gt; components/emthemes-modez/sections/section section=&quot;special_products_columns&quot;}}
-{{&gt; components/emthemes-modez/sections/section section=&quot;brands_carousel&quot;}}
-{{&gt; components/emthemes-modez/sections/section section=&quot;instagram_grid&quot;}}
+<p><strong>sarahstore2.html</strong></p>
+<pre><code class="plain">{{&gt; components/emthemes-modez/sections/section section=&quot;featured_categories&quot; print_container=true container_style=&quot;alt&quot;}}
+{{&gt; components/emthemes-modez/sections/section section=&quot;sarahstore2_products_carousel&quot; products=products.featured print_container=true}}
+{{&gt; components/emthemes-modez/sections/section section=&quot;new_products&quot; print_container=true container_style=&quot;alt&quot; style=&quot;sarahstore2&quot;}}
+{{&gt; components/emthemes-modez/sections/section section=&quot;sarahstore2_blog_recent&quot; print_container=true}}
+{{&gt; components/emthemes-modez/sections/section section=&quot;brands_carousel&quot; print_container=true style=&quot;sarahstore2&quot;}}
 </code></pre>
 
 <p>The files are showing very clearly how content blocks are displayed. See values in parameter <code>section="..."</code>:</p>
 <ul>
-<li><code>banner_laparis1_1</code>: Is the first block content 3 banners in the homepage of default style.</li>
-<li><code>new_products</code>: Is a block contains new products.</li>
-<li><code>categories_featured</code>: Is a block contains featured products with categories list as appeared on the homepage of default style.</li>
-<li><code>popular_products</code>: Is a block contains popular (or bestselling) products.</li>
-<li><code>blog_recent</code>: Is a block contains recent blog posts.</li>
-<li><code>brands_carousel</code>: Is a brand images carousel.</li>
-<li><code>instagram_grid</code>: Is a block displaying instagram photos.</li>
-<li><code>products_by_category_1</code> &amp; <code>products_by_category_2</code>: Is a block contains product in a certain category as showing on homepage of LaParis II style.</li>
-<li><code>carousel_laparis2_1</code>: Is the image carousel as showing on homepage of LaParis II style.</li>
-<li><code>special_products_columns</code>: Is a block contains 3 columns showing new products, featured products and bestselling products as displayed on homepage of LaParis II style.</li>
+<li><code>text_1</code>: Text appears below the main slideshow.</li>
+<li><code>shoy_by</code>: section contains shop by category and shop by brand on the default style.</li>
+<li><code>new_products</code>: New products block</li>
+<li><code>featured_products</code>: Featured products block</li>
+<li><code>popular_products</code>: Bestselling products block</li>
+<li><code>blog_recent</code>: Recent blog posts.</li>
+<li><code>social_icons</code>: Connect with us, social icons.</li>
+<li><code>sarahstore2_products_carousel</code>: Showing products carousel on SarahStore II style.</li>
+<li><code>sarahstore2_blog_recent</code>: Showing recent block posts in SarahStore II style.</li>
+<li><code>brands_carousel</code>: image or brands carousel.</li>
 </ul>
 <p>So just copy a line from the other file to the other. Arrange position of these sections as you wish.</p>
 <p>Example of a mixed <strong>default.html</strong>:</p>
