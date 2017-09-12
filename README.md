@@ -1,2 +1,2 @@
-# bc-modez-docs
-Documentation for the BigCommerce Theme Modez by tvlgiao
+# bc-sarahstore-docs
+Documentation for the BigCommerce Theme SarahStore by papathemes

@@ -1,8 +1,8 @@
-# User Guide - BigCommerce Theme LaParis
+# User Guide - BigCommerce Theme SarahStore
 
-Theme Version: 1.0.1 (2017-04-13)
+Theme Version: 1.0.0 (2017-05-30)
 
-Theme designed and developed by [papathemes](http://papathemes.com) 
+Theme designed and developed by [papathemes](https://papathemes.com) 
 
 ## User Guide Contents
 

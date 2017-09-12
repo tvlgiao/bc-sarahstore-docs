@@ -66,7 +66,7 @@ Theme includes 2 styles:
 
 ![Home 1](img/home1.jpg)
 
-### LaParis II
+### Style 2
 
 ![Home 2](img/home2.jpg)
 

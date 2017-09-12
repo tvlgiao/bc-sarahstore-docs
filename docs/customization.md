@@ -46,7 +46,7 @@ To configure, open the __Theme Editor__, scroll down to section __Logo__, click 
 
 ![Change logo position](img/change-logo-position.png)
 
-### Edit 3 info text blocks
+### Edit welcome text & top links
 ![Header info text](img/home1-infobar.png)
 
 Show or hide these text blocks in Theme Editor > __Header__ section as showing below: 
@@ -60,7 +60,9 @@ From the left navigation, click to edit the language file (e.i `en.json`):
 
 ![Edit language file](img/edit-language-top-info-text.png)
 
-Edit the text as figured above.
+- `welcome_text`: the welcome text
+- `help_text` & `help_link`: text & url of Help link.
+- `contact_text` & `contact_link`: text & url of Contact link.
 
 
 ### Colors Customization
@@ -100,17 +102,32 @@ To hide the slideshow on homepage, uncheck on the checkbox __Show Carousel__ in 
 
 
 
+## Text below the main slideshow
+
+![Text below the main slideshow](img/home1-text-below-slideshow.png)
+
+Edit this content in the language file `lang/en.json`, find the key `emthemesmodez` > `text_block_1` and edit its value.
 
 
-## 3 Banners
+## 2 Banners beside the main slideshow (SaraStore II)
 
-![3 Banners LaParis Style 1](img/home1-banner-laparis1.jpg)
+![2 banners beside the main slideshow](img/home2-slideshow-banners.jpg)
 
-To edit content and images of 3 banners, edit the language file `en.json` as showing below:
+You can edit these banners and links in the language file `lang/en.json`, find key `emthemesmodez` > `slideshow`, update `sarahstore2_banner_1` and `sarahstore2_banner_2` with your own content.
 
-![Edit language banner LaParis1](img/edit-language-banner-laparis1.png)
 
-If you don't want to show any elements of a banner, for example the button, leave the value __a single space__ character. Example: `"button": " "`.
+
+
+## Shop By block
+
+![Shop by block](img/home1-shopby.png)
+
+Edit this block content in the language file `lang/en.json`, find the key `emthemesmodez` > `shop_by` edit as you wish:
+
+![Edit langauge for shop by block](img/edit-language-shopby.png)
+
+
+
 
 
 ## New / Featured / Popular Products
@@ -123,11 +140,11 @@ __Grid__:
 
 __List__:
 
-![Products Grid](img/home1-products-list.jpg)
+![Products List](img/home1-products-list.jpg)
 
 __Carousel__:
 
-![Products Grid](img/home1-products-carousel.jpg)
+![Products Carousel](img/home1-products-carousel.jpg)
 
 
 ### Configure a Layout Type of products block & Number of Products to show up
@@ -160,6 +177,25 @@ To change the heading text (New Products, Featured Products, Most Popular Produc
 
 ![Edit language new products heading text](img/edit-language-products-new.png)
 
+### Change background of featured products block
+
+![Products Carousel](img/home1-products-carousel.jpg)
+
+#### Method 1: 
+
+To replace this background with our own image, in [Edit Theme Files](quickstart.md#edit-template-files) you can overwrite image file `assets/img/categories-featured-bg.jpg` with your own.
+
+#### Method 2:
+
+To completely remove it, add the CSS code below to `assets/scss/_theme-custom.scss`:
+
+```css
+.emthemesModez-productsVerticalCategoriesAside-outer--1 {
+  background-image: none;
+}
+```
+
+
 
 
 
@@ -180,9 +216,19 @@ To change the heading text, read more text and date format, edit the language fi
 
 
 
+## Connect With Us block
+
+![Connect with us](img/home1-connect-with-us.png)
+
+Edit the heading text in the language file `lang/en.json`, find the key `social` > `connect`
+
+Note: You will need to configure which icons to appear in admin panel > __Storefront Design__ > __Design Options__, input your social links in __Social Media__ section.
 
 
-## Image Carousel
+
+
+
+## Image Carousel (SarahStore II)
 
 ![Image carousel](img/home1-image-carousel.png)
 
@@ -198,225 +244,42 @@ To edit image and links in this image carousel section, edit the language file, 
 
 
 
-## Instagram Photos
 
-![Instagram Photos block](img/home1-instagram.jpg)
 
-### Get your own User ID, Client ID, Access Token
+## Footer - Store Info
 
-In order to display your Instagram photos on your website, you will need to get the __User ID__, __Client ID__ and __Access Token__ from __Instagram Developer__ portal.
+![Footer Store Info](img/home1-footer-store-info.png)
 
-#### 1. Create your own Client ID
+You can edit content in the language file `lang/en.json`:
 
-Open the URL <https://www.instagram.com/developer/> in your browser.
+- `footer` > `about_text`: Your custom about us text
+- `footer` > `call_us`: phone number text
+- `footer` > `email`: email to display
+- Phone and address are pull out from your store settings.
 
-Login to your Instagram account.
 
-Click button __Register Your Application__: 
+## Footer - 2 Column Links
 
-![Instagram register your application](img/instagram-register.png)
+![2 column links](img/home1-2-column-links.png)
 
-Click button __Register a New Client__: 
+You can edit these links in the language file `lang/en.json`, find key `footer` > `links`:
 
-![Instagram new client](img/instagram-register-new-client.png)
+![Edit language for 2 column links](img/edit-language-2-column-links.png)
 
-Enter all required info on the form. 
 
-![Instagram registration form](img/instagram-registration-form.png)
 
-Note that __Valid redirect URIs__ should be exactly `http://127.0.0.1` as recommended as it will be used in the next step.
 
-After submitting the form you will get back to the previous page with a new __Client ID__ is created.
+## Footer - Copyright links
 
-![Instagram Manage Clients](img/instagram-manage-clients.png)
+![Footer copyright links](img/home1-footer-copyright-links.png)
 
-Save this __Client ID__ value, it will be used to configure the Instagram Photos block.
+You can edit these links in the language file `lang/en.json`, find key `footer` > `copyright_links`.
 
-#### 2. Retrieve your Access Token
 
-Click button __Manage__ on your the client app created previously. Open __Security__ tab, uncheck __Disable Implicit OAuth__ checkbox:
 
-![Manage client - security tab](img/instagram-implicit-oauth.png)
 
-Click __Update Client__ button to complete.
 
-Now open your web browser with the URL: 
 
-```plain
-https://api.instagram.com/oauth/authorize/?client_id=CLIENT-ID&redirect_uri=http://127.0.0.1&response_type=token
-```
-
-where `CLIENT-ID` is replaced by your __Client ID__ number created previously.
-
-Click __Authorize__ button to grant access permission:
-
-![Authorize client app](img/instagram-authorize.png)
-
-Instagram will redirect you to an error page with the URL similiar: 
-
-![URL contains access token](img/instagram-get-code.png)
-
-The text after `access_token=` is the __Access Token__ you want to get. Save it for the next step.
-
-#### 3. Retrieve your User ID
-
-Open the link below on your web browser:
-
-```plain
-https://api.instagram.com/v1/users/self/?access_token=ACCESS-TOKEN
-```
-Where `ACCESS-TOKEN` is replaced by your real __Access Token__ just received previously.
-
-![User ID code](img/instagram-get-userid.png)
-
-The number in `"id": "..."` is your __User ID__.
-
-### Display your Instagram photos
-
-To display our own Instagram photos, edit the language file. Find the key `emthemesmodez` > `instagram`, input your real code:
-
-- `user_id`: Is your Instagram __User ID__.
-- `client_id`: is your Instagram __Client ID__.
-- `access_token`: is your Instagram __Access Token__.
-- `title`: Is the heading text.
-
-![Edit instagram in the language file](img/edit-language-instagram.png)
-
-
-
-
-
-
-## LaParis II - Products By Category
-
-![Products by category](img/home2-products-by-category.jpg)
-
-This section allows you to show products in a certain category. To configure it edit the language file. File keys `emthemesmodez` > `products_by_category`.
-
-![Edit language products by category](img/edit-language-products-by-category.png)
-
-- `category_id_*`: is the product category ID that products belong.
-- `image_*`: is the image URL to show up beside the products.
-- `heading_*`: The heading text on the banner beside.
-- `text_*`: Description text on the banner beside.
-- `banner_*`: Button text on the banner beside
-- `style_*`: `" "` or `"right"` to show banner on left or right.
-
-Theme supports up to 3 products by category blocks.
-
-
-## LaParis II - Images Carousel
-
-![Images Carousel](img/home2-image-carousel.jpg)
-
-To configure this image carousel, edit the lagnuage file, find keys `emthemesmodez` > `image_carousel`:
-
-![Edit language image carousel](img/edit-language-image-carousel.png)
-
-- `image_*`: Slide image URL. Leave a single space letter if not use.
-- `image_alt_*`: image alt text.
-- `url_*`: link URL.
-- `heading_*`: Heading text. Leave a single space letter to hide.
-- `text_*`: Description text. Leave a single space letter to hide.
-- `button_*`: Button text. Leave a single space to hide.
-
-Theme supports up to 5 images in this section. 
-
-
-
-## LaParis II - New / Featured / Bestselling Columns
-
-![New Featured Bestselling products columns](img/home2-special-products-columns.jpg)
-
-This section show new products, featured products and bestselling products in 3 columns.
-
-You can configure number of products to display in __Theme Editor__ > __Homepage__ section:
-
-![Theme editor products](img/theme-editor-homepage-products-options.png)
-
-You can change the heading text of each column in the language files, find and edit keys `products` > `new`, `products` > `featured`, `products` > `top`.
-
-
-
-
-
-
-## Footer - Newsletter
-
-![Newsletter](img/home1-newsletter.png)
-
-### Change text
-
-To change text appear on this section you can edit the language file as instruction below:
-
-From admin page > __Storefront Design__ > __My Themes__, click button __Advanced__ > __Edit Theme Files__ of the current theme:
-
-![Edit theme files](img/edit-theme-files.png)
-
-From the left navigation, click to edit the language file (e.i `en.json`):
-
-![Edit language file](img/edit-language-file.png)
-
-See the section `Newsletter` you can edit as you want:
-
-![Edit language newsletter](img/edit-language-newsletter.png)
-
-### Colors Customization
-
-To customize colors of the header section, look into the options showing below in the __Theme Editor__ > __Footer__:
-
-![Theme editor newsletter](img/theme-editor-newsletter.png)
-
-
-## Footer - Links
-
-![Footer Links](img/home1-footer-columns.png)
-
-To edit text and links on the footer, edit the language file, section `footer` > `links`:
-
-![Edit language footer links](img/edit-language-footer-links.png)
-
-- `col1_heading`, `col2_heading`, `col3_heading`: is the heading text of each column.
-- `col*_url*`, `col*_title*`: is URL and text of each link.
-
-
-
-## Social Media Icons
-
-![Theme editor social media icons](img/theme-editor-social-media-icons.png)
-
-To show social icons in the footer, open __Theme Editor__ > __Social Media Icons__ section, set __Bottom Placement__ = `Right`. 
-
-Note: You will need to configure which icons to appear in admin panel > __Storefront Design__ > __Design Options__, input your social links in __Social Media__ section.
-
-
-
-
-## Payment Icons
-
-![Theme editor payment icons](img/theme-editor-payment-icons.png)
-
-To show/hide payment icons, go to Theme __Editor__ > __Payment Icons__ secitons, check or uncheck any icons you want to show or hide.
-
-
-## Copyright Links
-
-![Copyright links](img/home1-copyright-links.png)
-
-To edit links in the copyright section at footer, edit the language file, find `footer` > `copyright_links`:
-
-![Edit language copyright links](img/edit-language-copyright-links.png)
-
-- `url*` is link URL. Leave a __single space__ letter if you want to hide any link.
-- `title*` is link title.
-
-
-
-## Credit Links
-
-![Theme editor credit links](img/theme-editor-credits.png)
-
-To show/hide the credit links, go to Theme Editor > __Footer__ section, tick or untick the checkboxes as showing above.
 
 
 
@@ -432,45 +295,44 @@ Let open folder `templates` > `components` > `emthemes-modez` > `home` in the te
 There is 2 files in this folder:
 
 - `default.html`: is used for __default__ style.
-- `laparis2.html`: is used for __LaParis II__ style.
+- `sarahstore2.html`: is used for __SarahStore II__ style.
 
 Let's take a look at contents of 2 files:
 
 __default.html__
 
 ```plain
-{{> components/emthemes-modez/sections/section section="banner_laparis1_1"}}
+{{> components/emthemes-modez/sections/section section="text_1"}}
+{{> components/emthemes-modez/sections/section section="shop_by"}}
 {{> components/emthemes-modez/sections/section section="new_products"}}
-{{> components/emthemes-modez/sections/section section="categories_featured"}}
+{{> components/emthemes-modez/sections/section section="featured_products"}}
 {{> components/emthemes-modez/sections/section section="popular_products"}}
 {{> components/emthemes-modez/sections/section section="blog_recent"}}
-{{> components/emthemes-modez/sections/section section="brands_carousel"}}
-{{> components/emthemes-modez/sections/section section="instagram_grid"}}
+{{> components/emthemes-modez/sections/section section="social_icons"}}
 ```
 
-__laparis2.html__
+__sarahstore2.html__
 
 ```plain
-{{> components/emthemes-modez/sections/section section="products_by_category_1"}}
-{{> components/emthemes-modez/sections/section section="products_by_category_2"}}
-{{> components/emthemes-modez/sections/section section="carousel_laparis2_1"}}
-{{> components/emthemes-modez/sections/section section="special_products_columns"}}
-{{> components/emthemes-modez/sections/section section="brands_carousel"}}
-{{> components/emthemes-modez/sections/section section="instagram_grid"}}
+{{> components/emthemes-modez/sections/section section="featured_categories" print_container=true container_style="alt"}}
+{{> components/emthemes-modez/sections/section section="sarahstore2_products_carousel" products=products.featured print_container=true}}
+{{> components/emthemes-modez/sections/section section="new_products" print_container=true container_style="alt" style="sarahstore2"}}
+{{> components/emthemes-modez/sections/section section="sarahstore2_blog_recent" print_container=true}}
+{{> components/emthemes-modez/sections/section section="brands_carousel" print_container=true style="sarahstore2"}}
 ```
 
 The files are showing very clearly how content blocks are displayed. See values in parameter `section="..."`:
 
-- `banner_laparis1_1`: Is the first block content 3 banners in the homepage of default style.
-- `new_products`: Is a block contains new products.
-- `categories_featured`: Is a block contains featured products with categories list as appeared on the homepage of default style.
-- `popular_products`: Is a block contains popular (or bestselling) products.
-- `blog_recent`: Is a block contains recent blog posts.
-- `brands_carousel`: Is a brand images carousel.
-- `instagram_grid`: Is a block displaying instagram photos.
-- `products_by_category_1` & `products_by_category_2`: Is a block contains product in a certain category as showing on homepage of LaParis II style.
-- `carousel_laparis2_1`: Is the image carousel as showing on homepage of LaParis II style.
-- `special_products_columns`: Is a block contains 3 columns showing new products, featured products and bestselling products as displayed on homepage of LaParis II style.
+- `text_1`: Text appears below the main slideshow.
+- `shoy_by`: section contains shop by category and shop by brand on the default style.
+- `new_products`: New products block
+- `featured_products`: Featured products block
+- `popular_products`: Bestselling products block
+- `blog_recent`: Recent blog posts.
+- `social_icons`: Connect with us, social icons.
+- `sarahstore2_products_carousel`: Showing products carousel on SarahStore II style.
+- `sarahstore2_blog_recent`: Showing recent block posts in SarahStore II style.
+- `brands_carousel`: image or brands carousel.
 
 So just copy a line from the other file to the other. Arrange position of these sections as you wish.
 
